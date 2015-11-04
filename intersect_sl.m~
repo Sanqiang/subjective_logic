@@ -1,0 +1,3 @@
+function triple = intersect_sl(triple1, triple2)
+triple = zeros()
+end
