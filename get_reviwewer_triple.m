@@ -13,6 +13,8 @@
 
 %uncertain conteibuted from unknown elements for both reviewer1 and
 %reviewer2, and unknown elements just for reviewer2 (higher weight).
+
+%finally norm triples
 function triple = get_reviwewer_triple(data, reviewer1_idx, reviewer2_idx)
 triple = {};
 col1 = data(:,reviewer1_idx);
