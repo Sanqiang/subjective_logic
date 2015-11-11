@@ -1,0 +1,4 @@
+x = ones(1000,1);
+for loop = 1:1000
+ x = generate_matrix_add_column(x,0.99,0);
+end
