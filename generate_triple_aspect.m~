@@ -1,0 +1,19 @@
+function tripe = generate_triple_aspect(m)
+
+n_aspct = size(m,1);
+n_reviewer = size(triple,2);
+triple = zeros(3,n_aspct);
+
+for aspect_ind = 1:n_aspct
+   m_aspect = m(aspect_ind,:);
+   c_zero = length(m_aspect == 0);
+   c_pos = length(m_aspect == 1);
+   c_neg = length(m_aspect == -1);
+   c_all = length(m_aspect);
+   
+   triple(3,aspect_ind) = c_zero / c_all;
+   
+   entropy = c_pos / (c_pos + c_neg) * log(c_pos / (c_pos + c_neg)) 
+end
+
+end
